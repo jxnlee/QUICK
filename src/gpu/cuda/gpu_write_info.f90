@@ -17,7 +17,7 @@ subroutine gpu_write_info(io, ierr)
     integer gpu_dev_count
     integer gpu_dev_id
     integer gpu_num_proc
-    character(len=20) gpu_dev_name
+    character(len=256) gpu_dev_name
     integer gpu_dev_mem
     double precision gpu_core_freq
     integer name_len
@@ -53,7 +53,7 @@ subroutine mgpu_write_info(io, gpu_dev_count, mgpu_ids, ierr)
     integer mgpu_ids(gpu_dev_count)
     integer gpu_dev_id
     integer gpu_num_proc
-    character(len=20) gpu_dev_name
+    character(len=256) gpu_dev_name
     integer gpu_dev_mem
     double precision gpu_core_freq
     integer name_len
